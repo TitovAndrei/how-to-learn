@@ -1,3 +1,8 @@
+*{
+  border: 1px solid rgb(255, 6, 6);
+
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -47,8 +52,14 @@
 
 }
 
-.description{
+.content{
+  
+}
 
+.description{
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
 }
 
 .description__two-columns{
@@ -72,7 +83,9 @@
 }
 
 .digits{
-
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
 }
 
 .section-title{
@@ -99,19 +112,19 @@
 
 }
 
-.table_cell{
+.table__cell{
 
 }
 
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+.table_cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
 }
 
-.table_heading{
+.table__heading{
 
 }
 
@@ -119,7 +132,7 @@
 
 }
 
-.table_text{
+.table__text{
 
 }
 
@@ -128,7 +141,11 @@
 }
 
 .feynman{
-
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background-image: url(/images/feynman.png);
+  background-position: left;
 }
 
 .feynman__title{
@@ -139,11 +156,14 @@
 
 }
 
-.feynman.link{
+.feynman__link{
 
 }
-.kaufman{
 
+.kaufman{
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
 }
 
 .kaufman__triangle{
@@ -151,22 +171,24 @@
 }
 
 .footer{
-
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
 }
 
 .footer__columns{
 
 }
 
-.footer_columns_content_copyright{
+.footer_column_content_copyright{
 
 }
 
-.footer_columns_content_info{
+.footer_column_content_info{
 
 }
 
-.footer_columns_content_social{
+.footer_column_content_social{
 
 }
 
@@ -187,5 +209,5 @@
 }
 
 .footer__column-link{
-  
+
 }
