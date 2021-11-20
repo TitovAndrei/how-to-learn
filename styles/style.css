@@ -104,8 +104,6 @@
   align-items: stretch;
   justify-content: space-between;
   width: 80%; 
-  
-  
 }
 
 .description_two-columns_brief{
@@ -119,14 +117,14 @@
 }
 
 .description_two-columns_main-text{
-  border: 1px solid rgb(248, 1, 1);
+  
   width: 80%; 
   min-width: 784px;
   
 }
 
 .description_two-columns_paragraph{
-  border: 1px solid rgb(248, 1, 1);
+  
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -142,11 +140,22 @@
 }
 
 .digits{
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .section-title{
-
+  width: 60%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bolder;
 }
 
 .section-title_theme_dark{
@@ -154,7 +163,12 @@
 }
 
 .section-subtitle{
-
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 .section-subtitle_theme_dark{
@@ -162,7 +176,14 @@
 }
 
 .table{
-
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 100px;
+  
 }
 
 .table_theme_dark{
@@ -170,6 +191,12 @@
 }
 
 .table__cell{
+  list-style-type: none;
+  width: 250px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 60px;
 
 }
 
@@ -182,7 +209,11 @@
 }
 
 .table__heading{
-
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 0;
+  
 }
 
 .table_heading_theme_dark{
@@ -190,7 +221,11 @@
 }
 
 .table__text{
-
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .table_text_theme_dark{
@@ -200,18 +235,19 @@
 .feynman{
   background: url(/images/feynman.png);
   background-position: left;
-  
+  border: 1px solid rgb(248, 1, 1);
 }
 
 .feynman__title{
-
+  border: 1px solid rgb(248, 1, 1);
 }
 
 .feynman__subtitle{
-
+  border: 1px solid rgb(248, 1, 1);
 }
 
 .feynman__link{
+  border: 1px solid rgb(248, 1, 1);
   text-decoration: none;
 }
 
