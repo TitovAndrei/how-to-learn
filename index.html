@@ -6,19 +6,20 @@
   <title>Научиться учиться</title>
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
-  </head>
+</head>
 <body>
   <div class="page">
     
     <header class="header">
       <img src="./images/logo_place_header.svg" alt="Логотип" class="logo_place_header">
-      <h1 class="header header__title">Научится учится</h1>
-      <p class="header header__sutitle">
-        Какие современные и эффективные подходы к обучению
-        вы можете использовать в своей жизни? 
-        <a href="#" class="header header__link">Узнать &rarr;</a> 
-      </p>
-      <img src="./images/header-image.png" alt="Грустный мальчик с собакой" class="header header__main-illustration">
+      <h1 class="header__title">Научится учится</h1>
+      <div class="header__subtitle">
+          <p>
+            Какие современные и эффективные подходы к обучению
+            вы можете использовать в своей жизни?<a href="#" class="header__link"> Узнать &rarr;</a> 
+        </p>
+      </div>
+      <img src="./images/header-image.png" alt="Грустный мальчик с собакой" class="header__main-illustration">
       <div class="header header__square-pic"></div>
     </header>
     
@@ -34,10 +35,10 @@
               Мы готовимся к экзамену и учим билеты. Мы тренируемся решать однообразные задачи,
               чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания.
               Зубрежка быстро выветривается и не приносит пользы.
-            </p>
-            <span class="description description_two-columns_span-accent">
-              Вывод: учится тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
-            </span> 
+            </p class="description description_two-columns_paragraph">
+            <p><span class="description_two-columns_paragraph description_two-columns_span-accent">Вывод:</span> 
+              учится тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
+            </p>  
             <p class="description description_two-columns_paragraph">
               Конкретные техники и упражнения помогают изменить подход к обучению, сделвть его эффективным и захватывающим. 
               Эти же техники применяются при обучении в Практикуме.
@@ -153,15 +154,15 @@
         </div>
         <div class="footer footer_column_content_info">
           <h3 class="footer_column_content_info footer__column-heading">О практикуме</h3>
-          <div>
+          <nav>
             <p><a href="#" class="footer_column_content_info footer__column-links">Главная</a></p>
             <p><a href="#" class="footer_column_content_info footer__column-links">Концепция</a></p>
             <p><a href="#" class="footer_column_content_info footer__column-links">Наставники</a></p>
-          </div>
+          </nav>
         </div>
         <div class="footer footer_column_content_social">
           <h3 class="footer_column_content_social footer__column-heading">Соцсети</h3>
-          <div>
+          <nav>
             <p><a href="#" class="footer_column_content_social footer__column-link">
               <img src="/images/facebook_color_white.svg" alt="Иконка facebook" class="footer footer_column_content_social footer__social-icon">
               Facebook
@@ -174,7 +175,7 @@
               <img src="/images/instagram_color_white.svg" alt="Иконка Instagram" class="footer footer_column_content_social footer__social-icon">
               Instagram
             </a></p>
-          </div>
+          </nav>
         </div>
       </div>
     </footer>
