@@ -8,7 +8,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
+/* Определяю стили для блока header */
 .header {
   margin: 0 auto;
   height: 100vh;
@@ -68,7 +68,7 @@
   z-index: 0;
 }
 
-
+/* Определяю стили для логотипа */
 .logo_place_header {
   position: absolute;
   height: 32px;
@@ -86,10 +86,12 @@
   z-index: 999;
 }
 
+/* начало блока content */
 .content {
   margin: 0;
 }
 
+/* Определяю стили для блока description */
 .description {
 
   display: flex;
@@ -138,6 +140,7 @@
   font-weight: bolder;
 }
 
+/* Определяю стили для блока digits */
 .digits {
 
   display: flex;
@@ -199,7 +202,7 @@
   margin-top: 20px;
   margin-bottom: 0;
 }
-
+/* Определяю стили для блока feynman */
 .feynman {
   height: 890px;
   margin: 0;
@@ -250,6 +253,7 @@
   z-index: 0;
 }
 
+/* Определяю стили для блока kaufman */
 .kaufman {
   background-color: #1f1f1f;
   overflow: hidden;
@@ -270,37 +274,19 @@
   right: -210px;
 }
 
+/* Определяю дополнительные стили для уже определенных блоков */
 .section-title_theme_dark {
-  width: 60%;
-  margin-top: 100px;
-  margin-bottom: 20px;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bolder;
   color: white;
   z-index: 1;
 }
 
 .section-subtitle_theme_dark {
-  width: 60%;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   color: white;
   z-index: 1;
 }
 
 .table_theme_dark {
   list-style-type: none;
-  width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-  margin-top: 0px;
   margin-bottom: 90px;
   color: white;
   z-index: 1;
@@ -311,28 +297,17 @@
   width: 200px;
   color: white;
   margin-top: 80px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 .table_heading_theme_dark {
   color: white;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bolder;
-  margin: 0;
 }
 
 .table_text_theme_dark {
   color: white;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin-top: 20px;
-  margin-bottom: 0px;
 }
 
+/* Определяю стили для блока footer */
 .footer {
   background-color: #1f1f1f;
   min-height: 350px;
@@ -356,12 +331,10 @@
 
 .footer_column_content_info {
   margin: 0;
-  border: 1px solid rgb(248, 1, 1);
 }
 
 .footer_column_content_social {
   margin: 0;
-  border: 1px solid rgb(248, 1, 1);
 }
 
 .footer__author {
@@ -382,13 +355,11 @@
   font-size: 18px;
   font-weight: bolder;
   color: white;
-  border: 1px solid rgb(248, 1, 1);
 }
 
 .footer__column-links {
   margin-top: 20px;
   margin-bottom: 16px;
-  border: 1px solid rgb(248, 1, 1);
 }
 
 .footer__social-icon {
@@ -403,7 +374,4 @@
   margin-bottom: 0px;
   color: white;
   text-decoration: none;
-  border: 1px solid rgb(248, 1, 1);
 }
-
-
