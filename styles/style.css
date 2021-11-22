@@ -31,7 +31,6 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: bolder;
-
 }
 
 .header__subtitle {
@@ -99,14 +98,13 @@
 
 /* Определяю стили для блока description */
 .description {
-
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
 }
 
 .description__two-columns {
+  margin-top: 100px;
   padding: 0;
   align-items: stretch;
   justify-content: space-between;
@@ -124,7 +122,6 @@
 }
 
 .description_two-columns_main-text {
-
   width: 80%;
   min-width: 784px;
 }
@@ -207,6 +204,7 @@
   margin-top: 20px;
   margin-bottom: 0;
 }
+
 /* Определяю стили для блока feynman */
 .feynman {
   height: 890px;
