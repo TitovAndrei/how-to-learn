@@ -20,16 +20,13 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
-
 }
 
 .header__title {
   text-transform: none;
   padding: 0;
-  margin: 0;
-  width: 730px;
-  position: absolute;
-  left: 64px;
+  margin: 0px 0px 0px 64px;
+  max-width: 730px;
   z-index: 5;
   line-height: 96px;
   font-size: 102px;
@@ -39,7 +36,7 @@
 .header__subtitle {
   padding: 0;
   margin: 0;
-  width: 388px;
+  max-width: 388px;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -75,12 +72,12 @@
 }
 
 .logo{
-  position: absolute;
   z-index: 999;
 }
 
 /* Определяю стили для логотипа */
 .logo_place_header {
+  position: absolute;
   height: 32px;
   width: 183px;
   left: 64px;
@@ -91,8 +88,6 @@
 .logo_place_footer {
   width: 183px;
   height: 35px;
-  left: 0;
-  top: 0;
 }
 
 /* начало блока content */
@@ -103,20 +98,20 @@
 
 /* Определяю стили для блока description */
 .description {
+  padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.description__two-columns {
-  margin-top: 100px;
+.two-columns {
   padding: 0;
   align-items: stretch;
   justify-content: space-between;
   width: 80%;
 }
 
-.description_two-columns_brief {
+.two-columns__brief {
   font-weight: normal;
   margin: 0;
   width: 175px;
@@ -126,12 +121,12 @@
   font-size: 18px;
 }
 
-.description_two-columns_main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
 }
 
-.description_two-columns_paragraph {
+.two-columns__paragraph {
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -139,9 +134,12 @@
   font-size: 24px;
 }
 
-.description_two-columns_span-accent {
+.two-columns__paragraph:nth-child(2){
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bolder;
@@ -213,7 +211,7 @@
 
 /* Определяю стили для блока feynman */
 .feynman {
-  height: 890px;
+  min-height: 890px;
   margin: 0;
   background-color: #f2f2f2;
   display: flex;
@@ -223,7 +221,7 @@
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bolder;
@@ -243,12 +241,13 @@
 }
 
 .feynman__link {
+  color: #2f80ed;
   text-decoration: none;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   position: absolute;
-  top: 445px;
+  top: 50%;
   right: 48px;
 }
 
@@ -276,9 +275,13 @@
 }
 
 .kaufman__triangle {
+  margin: 0;
+  padding: 0;
   width: 877px;
   height: 877px;
   z-index: 0;
+  background-size: 100%;
+  background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
   top: 0px;
   right: -210px;
@@ -321,6 +324,7 @@
 }
 
 /* Определяю стили для блока footer */
+
 .footer {
   padding-top: 60px;
   padding-bottom: 40px;
@@ -334,26 +338,30 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
-  position: relative;
+}
+
+.footer__column{
+  display: flex;
+  flex-direction: column;
 }
 
 .footer_column_content_copyright {
+  justify-content: space-between;
+  align-items: flex-start;
   flex-basis: 711px;
-  color: white;
 }
 
 .footer_column_content_info {
   margin: 0;
+  padding: 0;
 }
 
 .footer_column_content_social {
   margin: 0;
+  padding: 0;
 }
 
 .footer__author {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   margin-top: 18px;
   margin-bottom: 18px;
   color: white;
@@ -370,11 +378,6 @@
   color: white;
 }
 
-.footer__column-links {
-  margin-top: 20px;
-  margin-bottom: 16px;
-}
-
 .footer__social-icon {
   margin-right: 10px;
   vertical-align: middle;
@@ -382,9 +385,18 @@
   height: 16px;
 }
 
+.footer__column-links {
+  margin: 20px 0px 16px 0px;
+  padding: 0;
+  list-style-type: none;
+}
+
 .footer__column-link {
   margin-top: 0px;
   margin-bottom: 0px;
   color: white;
   text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
