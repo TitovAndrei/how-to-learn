@@ -1,0 +1,10 @@
+/* Определяю стили для блока digits */
+.digits {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}

@@ -1,0 +1,5 @@
+/* Определяю дополнительные стили для уже определенных блоков */
+.section-title_theme_dark {
+  color: white;
+  z-index: 1;
+}
